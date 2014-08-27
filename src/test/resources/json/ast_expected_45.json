@@ -1,0 +1,55 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "fields" : [ {
+          "identifier" : null,
+          "expression" : {
+            "value" : "val1",
+            "constType" : "STRING_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "constant" : {
+            "value" : "prop1",
+            "constType" : "STRING_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTNameValuePair"
+        }, {
+          "identifier" : null,
+          "expression" : {
+            "value" : "four",
+            "constType" : "STRING_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "constant" : {
+            "value" : "4",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTNameValuePair"
+        }, {
+          "identifier" : {
+            "name" : "id",
+            "type" : "ASTIdentifier"
+          },
+          "expression" : {
+            "value" : "5",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "constant" : null,
+          "type" : "ASTNameValuePair"
+        } ],
+        "type" : "ASTObjectConst"
+      },
+      "identifier" : {
+        "name" : "objectLiteralNotEmthy",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

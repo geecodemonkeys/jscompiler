@@ -1,0 +1,38 @@
+{
+  "nodes" : [ {
+    "var" : {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    },
+    "caseList" : [ {
+      "expression" : {
+        "value" : "1",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "statements" : [ ],
+      "default" : false,
+      "type" : "ASTCase"
+    }, {
+      "expression" : {
+        "value" : "2",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "statements" : [ ],
+      "default" : false,
+      "type" : "ASTCase"
+    }, {
+      "expression" : {
+        "value" : "3",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "statements" : [ ],
+      "default" : false,
+      "type" : "ASTCase"
+    } ],
+    "type" : "ASTSwitch"
+  } ],
+  "type" : "ASTRoot"
+}

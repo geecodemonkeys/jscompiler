@@ -1,0 +1,31 @@
+{
+  "nodes" : [ {
+    "var" : {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    },
+    "caseList" : [ {
+      "expression" : {
+        "value" : "1",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "statements" : [ {
+        "label" : null,
+        "type" : "ASTBreak"
+      } ],
+      "default" : false,
+      "type" : "ASTCase"
+    }, {
+      "expression" : null,
+      "statements" : [ {
+        "label" : null,
+        "type" : "ASTBreak"
+      } ],
+      "default" : true,
+      "type" : "ASTCase"
+    } ],
+    "type" : "ASTSwitch"
+  } ],
+  "type" : "ASTRoot"
+}

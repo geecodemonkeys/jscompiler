@@ -1,0 +1,31 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "MULTIPLICATION",
+      "left" : {
+        "opType" : "PLUS",
+        "expression" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTUnaryExpression"
+      },
+      "right" : {
+        "opType" : "DECREMENT",
+        "expression" : {
+          "name" : "d",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTPostfixExpression"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

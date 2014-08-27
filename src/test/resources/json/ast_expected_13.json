@@ -1,0 +1,16 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "value" : "some_text\\\"",
+      "constType" : "STRING_CONSTANT",
+      "type" : "ASTConstant"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

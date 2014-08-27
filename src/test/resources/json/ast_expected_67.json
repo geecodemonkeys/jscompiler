@@ -1,0 +1,20 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "outer",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "name" : {
+        "name" : "inner",
+        "type" : "ASTIdentifier"
+      },
+      "arguments" : [ ],
+      "bodyStatements" : [ ],
+      "type" : "ASTFunctionDeclaration"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

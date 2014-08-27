@@ -1,0 +1,54 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "trueExpression" : {
+        "name" : "trueVar",
+        "type" : "ASTIdentifier"
+      },
+      "falseExpression" : {
+        "name" : "falseVar",
+        "type" : "ASTIdentifier"
+      },
+      "condition" : {
+        "operation" : "OR",
+        "left" : {
+          "operation" : "AND",
+          "left" : {
+            "name" : "a",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "name" : "b",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "operation" : "AND",
+          "left" : {
+            "name" : "c",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "opType" : "UNARY_NEGATE",
+            "expression" : {
+              "name" : "f",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTUnaryExpression"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "type" : "ASTTernaryCondition"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

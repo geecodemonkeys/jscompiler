@@ -1,0 +1,24 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "DIVIDE_EQUALS",
+    "leftHandSide" : {
+      "memberExpression" : {
+        "name" : "c",
+        "type" : "ASTIdentifier"
+      },
+      "indexExpression" : {
+        "value" : "0",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTIndexExpression"
+    },
+    "rightHandSide" : {
+      "value" : "5",
+      "constType" : "NUMBER_CONSTANT",
+      "type" : "ASTConstant"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

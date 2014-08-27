@@ -1,0 +1,24 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "DIVISION",
+      "left" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

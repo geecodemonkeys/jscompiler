@@ -1,0 +1,43 @@
+{
+  "nodes" : [ {
+    "condition" : {
+      "operation" : "LESS",
+      "left" : {
+        "name" : "i",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "statement" : {
+      "statements" : [ {
+        "assignmentType" : "EQUALS",
+        "leftHandSide" : {
+          "name" : "i",
+          "type" : "ASTIdentifier"
+        },
+        "rightHandSide" : {
+          "operation" : "PLUS",
+          "left" : {
+            "name" : "i",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "value" : "1",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "type" : "ASTAssignmentExpression"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTDoWhile"
+  } ],
+  "type" : "ASTRoot"
+}

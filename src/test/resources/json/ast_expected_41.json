@@ -1,0 +1,50 @@
+{
+  "nodes" : [ {
+    "tryBlock" : {
+      "statements" : [ {
+        "expression" : {
+          "memberExpression" : {
+            "name" : "Exception",
+            "type" : "ASTIdentifier"
+          },
+          "arguments" : [ ],
+          "type" : "ASTNewExpression"
+        },
+        "type" : "ASTThrow"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "catchIdentifier" : {
+      "name" : "e",
+      "type" : "ASTIdentifier"
+    },
+    "catchBlock" : {
+      "statements" : [ {
+        "memberExpression" : {
+          "name" : "print",
+          "type" : "ASTIdentifier"
+        },
+        "arguments" : [ {
+          "value" : "error",
+          "constType" : "STRING_CONSTANT",
+          "type" : "ASTConstant"
+        } ],
+        "type" : "ASTFunctionCall"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "finallyBlock" : {
+      "statements" : [ {
+        "memberExpression" : {
+          "name" : "clean",
+          "type" : "ASTIdentifier"
+        },
+        "arguments" : [ ],
+        "type" : "ASTFunctionCall"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTTry"
+  } ],
+  "type" : "ASTRoot"
+}

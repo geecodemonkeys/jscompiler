@@ -1,0 +1,43 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "propertyIdentifier" : {
+        "name" : "prop2",
+        "type" : "ASTIdentifier"
+      },
+      "memberExpression" : {
+        "propertyIdentifier" : {
+          "name" : "prop1",
+          "type" : "ASTIdentifier"
+        },
+        "memberExpression" : {
+          "propertyIdentifier" : {
+            "name" : "someOtherProp",
+            "type" : "ASTIdentifier"
+          },
+          "memberExpression" : {
+            "propertyIdentifier" : {
+              "name" : "someProp",
+              "type" : "ASTIdentifier"
+            },
+            "memberExpression" : {
+              "name" : "this",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTPropertyAccess"
+          },
+          "type" : "ASTPropertyAccess"
+        },
+        "type" : "ASTPropertyAccess"
+      },
+      "type" : "ASTPropertyAccess"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

@@ -1,0 +1,32 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "memberExpression" : {
+          "name" : "funct",
+          "type" : "ASTIdentifier"
+        },
+        "arguments" : [ {
+          "operation" : "PLUS",
+          "left" : {
+            "name" : "d",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "name" : "c",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTTwoOperandExpression"
+        } ],
+        "type" : "ASTFunctionCall"
+      },
+      "identifier" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

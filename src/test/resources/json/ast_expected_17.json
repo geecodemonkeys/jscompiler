@@ -1,0 +1,46 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "elements" : [ {
+        "operation" : "DIVISION",
+        "left" : {
+          "operation" : "MULTIPLICATION",
+          "left" : {
+            "name" : "a",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "name" : "b",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "value" : "5",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTTwoOperandExpression"
+      }, {
+        "operation" : "MODULUS",
+        "left" : {
+          "name" : "c",
+          "type" : "ASTIdentifier"
+        },
+        "right" : {
+          "name" : "f",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTTwoOperandExpression"
+      } ],
+      "type" : "ASTArrayConstant"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

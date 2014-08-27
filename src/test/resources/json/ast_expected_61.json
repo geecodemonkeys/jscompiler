@@ -1,0 +1,27 @@
+{
+  "nodes" : [ {
+    "condition" : {
+      "name" : "cond",
+      "type" : "ASTIdentifier"
+    },
+    "ifBody" : {
+      "memberExpression" : {
+        "propertyIdentifier" : {
+          "name" : "exec",
+          "type" : "ASTIdentifier"
+        },
+        "memberExpression" : {
+          "regex" : "haha",
+          "flags" : "",
+          "type" : "ASTRegEx"
+        },
+        "type" : "ASTPropertyAccess"
+      },
+      "arguments" : [ ],
+      "type" : "ASTFunctionCall"
+    },
+    "elseBody" : null,
+    "type" : "ASTIfStatement"
+  } ],
+  "type" : "ASTRoot"
+}

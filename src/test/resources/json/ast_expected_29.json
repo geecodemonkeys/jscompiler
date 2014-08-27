@@ -1,0 +1,37 @@
+{
+  "nodes" : [ {
+    "condition" : {
+      "operation" : "LESS",
+      "left" : {
+        "name" : "i",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "body" : {
+      "statements" : [ {
+        "list" : [ {
+          "initializer" : {
+            "value" : "5",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "identifier" : {
+            "name" : "a",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTVariableDeclaration"
+        } ],
+        "type" : "ASTList"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTWhile"
+  } ],
+  "type" : "ASTRoot"
+}

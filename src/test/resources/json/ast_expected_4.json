@@ -1,0 +1,66 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "BITWISE_XOR",
+        "left" : {
+          "operation" : "EQUALS_COMPARISON",
+          "left" : {
+            "propertyIdentifier" : {
+              "name" : "prop1",
+              "type" : "ASTIdentifier"
+            },
+            "memberExpression" : {
+              "expression" : {
+                "memberExpression" : {
+                  "name" : "Object",
+                  "type" : "ASTIdentifier"
+                },
+                "arguments" : [ ],
+                "type" : "ASTNewExpression"
+              },
+              "type" : "ASTParenExpression"
+            },
+            "type" : "ASTPropertyAccess"
+          },
+          "right" : {
+            "value" : null,
+            "constType" : "NULL",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "expression" : {
+            "operation" : "AND",
+            "left" : {
+              "value" : null,
+              "constType" : "TRUE_CONST",
+              "type" : "ASTConstant"
+            },
+            "right" : {
+              "name" : "flag",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "type" : "ASTParenExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

@@ -1,0 +1,23 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "INSTANCEOF",
+      "left" : {
+        "name" : "x",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "name" : "String",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

@@ -1,0 +1,36 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "DIVIDE_EQUALS",
+    "leftHandSide" : {
+      "name" : "variable",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "DIVISION",
+      "left" : {
+        "value" : "10",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "right" : {
+        "memberExpression" : {
+          "propertyIdentifier" : {
+            "name" : "exec",
+            "type" : "ASTIdentifier"
+          },
+          "memberExpression" : {
+            "regex" : "\\w+\\/\\\\",
+            "flags" : "",
+            "type" : "ASTRegEx"
+          },
+          "type" : "ASTPropertyAccess"
+        },
+        "arguments" : [ ],
+        "type" : "ASTFunctionCall"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

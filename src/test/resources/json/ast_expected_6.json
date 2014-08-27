@@ -1,0 +1,53 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "GREATER_OR_EQ",
+        "left" : {
+          "expression" : {
+            "operation" : "PLUS",
+            "left" : {
+              "value" : "5",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "right" : {
+              "operation" : "MODULUS",
+              "left" : {
+                "value" : "6",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "right" : {
+                "value" : "3",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "type" : "ASTParenExpression"
+        },
+        "right" : {
+          "name" : "b",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

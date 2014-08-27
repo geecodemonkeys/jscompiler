@@ -1,0 +1,112 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    }, {
+      "name" : "b",
+      "type" : "ASTIdentifier"
+    }, {
+      "name" : "c",
+      "type" : "ASTIdentifier"
+    }, {
+      "name" : "d",
+      "type" : "ASTIdentifier"
+    } ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "OR",
+        "left" : {
+          "operation" : "AND",
+          "left" : {
+            "operation" : "EQUALS_COMPARISON",
+            "left" : {
+              "name" : "a",
+              "type" : "ASTIdentifier"
+            },
+            "right" : {
+              "operation" : "MULTIPLICATION",
+              "left" : {
+                "operation" : "DIVISION",
+                "left" : {
+                  "value" : "5",
+                  "constType" : "NUMBER_CONSTANT",
+                  "type" : "ASTConstant"
+                },
+                "right" : {
+                  "name" : "c",
+                  "type" : "ASTIdentifier"
+                },
+                "type" : "ASTTwoOperandExpression"
+              },
+              "right" : {
+                "value" : "54",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "right" : {
+            "operation" : "EQUALS_COMPARISON",
+            "left" : {
+              "operation" : "DIVISION",
+              "left" : {
+                "name" : "a",
+                "type" : "ASTIdentifier"
+              },
+              "right" : {
+                "value" : "4",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "right" : {
+              "operation" : "MULTIPLICATION",
+              "left" : {
+                "name" : "f",
+                "type" : "ASTIdentifier"
+              },
+              "right" : {
+                "value" : "3",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "operation" : "NOT_EQUALS",
+          "left" : {
+            "name" : "ff",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "value" : "5",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

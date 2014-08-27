@@ -1,0 +1,28 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "func",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "expression" : null,
+      "type" : "ASTReturn"
+    }, {
+      "operation" : "PLUS",
+      "left" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

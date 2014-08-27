@@ -1,0 +1,72 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "LESS_OR_EQ",
+        "left" : {
+          "expression" : {
+            "operation" : "MULTIPLICATION",
+            "left" : {
+              "opType" : "MINUS",
+              "expression" : {
+                "propertyIdentifier" : {
+                  "name" : "prop",
+                  "type" : "ASTIdentifier"
+                },
+                "memberExpression" : {
+                  "name" : "this",
+                  "type" : "ASTIdentifier"
+                },
+                "type" : "ASTPropertyAccess"
+              },
+              "type" : "ASTUnaryExpression"
+            },
+            "right" : {
+              "value" : "3",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "type" : "ASTParenExpression"
+        },
+        "right" : {
+          "expression" : {
+            "opType" : "MINUS",
+            "expression" : {
+              "memberExpression" : {
+                "propertyIdentifier" : {
+                  "name" : "writeln",
+                  "type" : "ASTIdentifier"
+                },
+                "memberExpression" : {
+                  "name" : "this",
+                  "type" : "ASTIdentifier"
+                },
+                "type" : "ASTPropertyAccess"
+              },
+              "arguments" : [ ],
+              "type" : "ASTFunctionCall"
+            },
+            "type" : "ASTUnaryExpression"
+          },
+          "type" : "ASTParenExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

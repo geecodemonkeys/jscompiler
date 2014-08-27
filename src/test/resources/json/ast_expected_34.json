@@ -1,0 +1,88 @@
+{
+  "nodes" : [ {
+    "condition" : {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    },
+    "ifBody" : {
+      "statements" : [ {
+        "assignmentType" : "EQUALS",
+        "leftHandSide" : {
+          "name" : "aa",
+          "type" : "ASTIdentifier"
+        },
+        "rightHandSide" : {
+          "value" : "3",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTAssignmentExpression"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "elseBody" : {
+      "condition" : {
+        "name" : "b",
+        "type" : "ASTIdentifier"
+      },
+      "ifBody" : {
+        "statements" : [ {
+          "assignmentType" : "EQUALS",
+          "leftHandSide" : {
+            "name" : "bb",
+            "type" : "ASTIdentifier"
+          },
+          "rightHandSide" : {
+            "value" : "4",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTAssignmentExpression"
+        } ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : {
+        "condition" : {
+          "name" : "c",
+          "type" : "ASTIdentifier"
+        },
+        "ifBody" : {
+          "statements" : [ {
+            "assignmentType" : "EQUALS",
+            "leftHandSide" : {
+              "name" : "cc1",
+              "type" : "ASTIdentifier"
+            },
+            "rightHandSide" : {
+              "value" : "5",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "type" : "ASTAssignmentExpression"
+          } ],
+          "type" : "ASTBlockStatement"
+        },
+        "elseBody" : {
+          "statements" : [ {
+            "assignmentType" : "EQUALS",
+            "leftHandSide" : {
+              "name" : "lastMostInner",
+              "type" : "ASTIdentifier"
+            },
+            "rightHandSide" : {
+              "value" : "10",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "type" : "ASTAssignmentExpression"
+          } ],
+          "type" : "ASTBlockStatement"
+        },
+        "type" : "ASTIfStatement"
+      },
+      "type" : "ASTIfStatement"
+    },
+    "type" : "ASTIfStatement"
+  } ],
+  "type" : "ASTRoot"
+}

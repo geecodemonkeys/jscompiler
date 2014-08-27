@@ -1,0 +1,35 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : null,
+      "identifier" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    }, {
+      "initializer" : null,
+      "identifier" : {
+        "name" : "b",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    }, {
+      "initializer" : null,
+      "identifier" : {
+        "name" : "c",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    }, {
+      "initializer" : null,
+      "identifier" : {
+        "name" : "d",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

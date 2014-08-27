@@ -1,0 +1,32 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "outer",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "value" : null,
+        "constType" : "TRUE_CONST",
+        "type" : "ASTConstant"
+      },
+      "ifBody" : {
+        "statements" : [ {
+          "arguments" : [ ],
+          "body" : [ ],
+          "name" : {
+            "name" : "fstatement",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTFunctionExpression"
+        } ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

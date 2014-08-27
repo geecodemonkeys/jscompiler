@@ -1,0 +1,41 @@
+{
+  "nodes" : [ {
+    "iterationRef" : {
+      "list" : [ {
+        "initializer" : null,
+        "identifier" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTVariableDeclaration"
+      } ],
+      "type" : "ASTList"
+    },
+    "iteratorExpression" : {
+      "elements" : [ {
+        "value" : "1",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      }, {
+        "value" : "2",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      }, {
+        "value" : "3",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      }, {
+        "value" : "4",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      } ],
+      "type" : "ASTArrayConstant"
+    },
+    "statement" : {
+      "statements" : [ ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTForIn"
+  } ],
+  "type" : "ASTRoot"
+}

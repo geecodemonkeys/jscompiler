@@ -1,0 +1,67 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "EQUALS_COMPARISON",
+        "left" : {
+          "operation" : "DIVISION",
+          "left" : {
+            "memberExpression" : {
+              "propertyIdentifier" : {
+                "name" : "someFunct",
+                "type" : "ASTIdentifier"
+              },
+              "memberExpression" : {
+                "name" : "document",
+                "type" : "ASTIdentifier"
+              },
+              "type" : "ASTPropertyAccess"
+            },
+            "arguments" : [ ],
+            "type" : "ASTFunctionCall"
+          },
+          "right" : {
+            "value" : "10",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "operation" : "MULTIPLICATION",
+          "left" : {
+            "propertyIdentifier" : {
+              "name" : "prop",
+              "type" : "ASTIdentifier"
+            },
+            "memberExpression" : {
+              "name" : "this",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTPropertyAccess"
+          },
+          "right" : {
+            "value" : "5",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

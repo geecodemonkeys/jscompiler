@@ -1,0 +1,35 @@
+{
+  "nodes" : [ {
+    "expression" : {
+      "operation" : "LESS",
+      "left" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "body" : {
+      "statements" : [ {
+        "assignmentType" : "EQUALS",
+        "leftHandSide" : {
+          "name" : "f",
+          "type" : "ASTIdentifier"
+        },
+        "rightHandSide" : {
+          "value" : "5",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTAssignmentExpression"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTWith"
+  } ],
+  "type" : "ASTRoot"
+}

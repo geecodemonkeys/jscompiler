@@ -1,0 +1,5 @@
+@Test
+public void test_@@() throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	testBase("###", "ast_expected_@@.json");
+}

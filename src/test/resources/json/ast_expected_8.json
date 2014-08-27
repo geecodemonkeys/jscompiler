@@ -1,0 +1,47 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "OR",
+        "left" : {
+          "operation" : "AND",
+          "left" : {
+            "opType" : "UNARY_NEGATE",
+            "expression" : {
+              "name" : "b",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTUnaryExpression"
+          },
+          "right" : {
+            "opType" : "UNARY_NEGATE",
+            "expression" : {
+              "name" : "c",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTUnaryExpression"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "name" : "d",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

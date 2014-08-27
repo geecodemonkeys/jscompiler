@@ -1,0 +1,19 @@
+{
+  "nodes" : [ {
+    "memberExpression" : {
+      "propertyIdentifier" : {
+        "name" : "exec",
+        "type" : "ASTIdentifier"
+      },
+      "memberExpression" : {
+        "regex" : "\\n\\\\r",
+        "flags" : "",
+        "type" : "ASTRegEx"
+      },
+      "type" : "ASTPropertyAccess"
+    },
+    "arguments" : [ ],
+    "type" : "ASTFunctionCall"
+  } ],
+  "type" : "ASTRoot"
+}

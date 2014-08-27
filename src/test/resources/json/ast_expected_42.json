@@ -1,0 +1,33 @@
+{
+  "nodes" : [ {
+    "tryBlock" : {
+      "statements" : [ {
+        "expression" : {
+          "memberExpression" : {
+            "name" : "Exception",
+            "type" : "ASTIdentifier"
+          },
+          "arguments" : [ ],
+          "type" : "ASTNewExpression"
+        },
+        "type" : "ASTThrow"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "catchIdentifier" : null,
+    "catchBlock" : null,
+    "finallyBlock" : {
+      "statements" : [ {
+        "memberExpression" : {
+          "name" : "clean",
+          "type" : "ASTIdentifier"
+        },
+        "arguments" : [ ],
+        "type" : "ASTFunctionCall"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "type" : "ASTTry"
+  } ],
+  "type" : "ASTRoot"
+}

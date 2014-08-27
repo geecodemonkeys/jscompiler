@@ -1,0 +1,27 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "elements" : [ {
+        "value" : "1",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      }, {
+        "value" : "2",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      }, {
+        "value" : "3",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      } ],
+      "type" : "ASTArrayConstant"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

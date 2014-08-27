@@ -1,0 +1,31 @@
+{
+  "nodes" : [ {
+    "statement" : {
+      "statements" : [ {
+        "assignmentType" : "EQUALS",
+        "leftHandSide" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "rightHandSide" : {
+          "value" : "5",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTAssignmentExpression"
+      } ],
+      "type" : "ASTBlockStatement"
+    },
+    "initializer" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "increment" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "condition" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "type" : "ASTFor"
+  } ],
+  "type" : "ASTRoot"
+}

@@ -1,0 +1,11 @@
+{
+  "nodes" : [ {
+    "var" : {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    },
+    "caseList" : [ ],
+    "type" : "ASTSwitch"
+  } ],
+  "type" : "ASTRoot"
+}

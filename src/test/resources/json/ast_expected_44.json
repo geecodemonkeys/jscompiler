@@ -1,0 +1,17 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "fields" : [ ],
+        "type" : "ASTObjectConst"
+      },
+      "identifier" : {
+        "name" : "objectLiteral",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

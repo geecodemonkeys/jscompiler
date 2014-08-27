@@ -1,0 +1,64 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "operation" : "MULTIPLICATION",
+        "left" : {
+          "operation" : "DIVISION",
+          "left" : {
+            "operation" : "MULTIPLICATION",
+            "left" : {
+              "value" : "5",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "right" : {
+              "value" : "6",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "right" : {
+            "value" : "2",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "identifier" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    }, {
+      "initializer" : {
+        "operation" : "PLUS",
+        "left" : {
+          "value" : "haha",
+          "constType" : "STRING_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "right" : {
+          "value" : "haha",
+          "constType" : "STRING_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "identifier" : {
+        "name" : "d",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

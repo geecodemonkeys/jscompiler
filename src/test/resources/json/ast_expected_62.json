@@ -1,0 +1,18 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "regex" : "\\w+\\/\\\\",
+        "flags" : "ig",
+        "type" : "ASTRegEx"
+      },
+      "identifier" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

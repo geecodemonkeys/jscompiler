@@ -1,0 +1,24 @@
+{
+  "nodes" : [ {
+    "condition" : {
+      "name" : "cond",
+      "type" : "ASTIdentifier"
+    },
+    "ifBody" : {
+      "assignmentType" : "DIVIDE_EQUALS",
+      "leftHandSide" : {
+        "name" : "a",
+        "type" : "ASTIdentifier"
+      },
+      "rightHandSide" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTAssignmentExpression"
+    },
+    "elseBody" : null,
+    "type" : "ASTIfStatement"
+  } ],
+  "type" : "ASTRoot"
+}

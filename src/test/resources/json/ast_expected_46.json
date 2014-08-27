@@ -1,0 +1,37 @@
+{
+  "nodes" : [ {
+    "list" : [ {
+      "initializer" : {
+        "fields" : [ {
+          "identifier" : {
+            "name" : "id",
+            "type" : "ASTIdentifier"
+          },
+          "expression" : {
+            "arguments" : [ ],
+            "body" : [ {
+              "expression" : {
+                "value" : "5",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTReturn"
+            } ],
+            "name" : null,
+            "type" : "ASTFunctionExpression"
+          },
+          "constant" : null,
+          "type" : "ASTNameValuePair"
+        } ],
+        "type" : "ASTObjectConst"
+      },
+      "identifier" : {
+        "name" : "objectLiteralNotEmthy",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTVariableDeclaration"
+    } ],
+    "type" : "ASTList"
+  } ],
+  "type" : "ASTRoot"
+}

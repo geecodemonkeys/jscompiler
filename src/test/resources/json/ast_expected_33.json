@@ -1,0 +1,18 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    } ],
+    "bodyStatements" : [ {
+      "expression" : null,
+      "type" : "ASTReturn"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

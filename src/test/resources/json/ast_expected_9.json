@@ -1,0 +1,41 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "GREATER",
+        "left" : {
+          "operation" : "BITWISE_LEFT_SHIFT",
+          "left" : {
+            "name" : "a",
+            "type" : "ASTIdentifier"
+          },
+          "right" : {
+            "value" : "2",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTTwoOperandExpression"
+        },
+        "right" : {
+          "value" : "5",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

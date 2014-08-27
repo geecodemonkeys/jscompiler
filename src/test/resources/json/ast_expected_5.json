@@ -1,0 +1,88 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ ],
+    "bodyStatements" : [ {
+      "condition" : {
+        "operation" : "GREATER",
+        "left" : {
+          "expression" : {
+            "operation" : "MINUS",
+            "left" : {
+              "operation" : "PLUS",
+              "left" : {
+                "propertyIdentifier" : {
+                  "name" : "prop1",
+                  "type" : "ASTIdentifier"
+                },
+                "memberExpression" : {
+                  "expression" : {
+                    "memberExpression" : {
+                      "name" : "Object",
+                      "type" : "ASTIdentifier"
+                    },
+                    "arguments" : [ ],
+                    "type" : "ASTNewExpression"
+                  },
+                  "type" : "ASTParenExpression"
+                },
+                "type" : "ASTPropertyAccess"
+              },
+              "right" : {
+                "value" : "5",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "right" : {
+              "operation" : "DIVISION",
+              "left" : {
+                "value" : "4",
+                "constType" : "NUMBER_CONSTANT",
+                "type" : "ASTConstant"
+              },
+              "right" : {
+                "expression" : {
+                  "opType" : "INCREMENT",
+                  "expression" : {
+                    "name" : "i",
+                    "type" : "ASTIdentifier"
+                  },
+                  "type" : "ASTPostfixExpression"
+                },
+                "type" : "ASTParenExpression"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "type" : "ASTParenExpression"
+        },
+        "right" : {
+          "propertyIdentifier" : {
+            "name" : "number",
+            "type" : "ASTIdentifier"
+          },
+          "memberExpression" : {
+            "name" : "this",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTPropertyAccess"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "ifBody" : {
+        "statements" : [ ],
+        "type" : "ASTBlockStatement"
+      },
+      "elseBody" : null,
+      "type" : "ASTIfStatement"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

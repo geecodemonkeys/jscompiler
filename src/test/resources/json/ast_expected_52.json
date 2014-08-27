@@ -1,0 +1,46 @@
+{
+  "nodes" : [ {
+    "statement" : {
+      "statements" : [ ],
+      "type" : "ASTBlockStatement"
+    },
+    "initializer" : {
+      "list" : [ {
+        "initializer" : {
+          "value" : "0",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "identifier" : {
+          "name" : "i",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTVariableDeclaration"
+      } ],
+      "type" : "ASTList"
+    },
+    "increment" : {
+      "opType" : "INCREMENT",
+      "expression" : {
+        "name" : "i",
+        "type" : "ASTIdentifier"
+      },
+      "type" : "ASTPostfixExpression"
+    },
+    "condition" : {
+      "operation" : "LESS",
+      "left" : {
+        "name" : "i",
+        "type" : "ASTIdentifier"
+      },
+      "right" : {
+        "value" : "5",
+        "constType" : "NUMBER_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTFor"
+  } ],
+  "type" : "ASTRoot"
+}

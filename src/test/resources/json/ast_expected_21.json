@@ -1,0 +1,43 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "PLUS",
+      "left" : {
+        "opType" : "DECREMENT",
+        "expression" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTUnaryExpression"
+      },
+      "right" : {
+        "operation" : "MULTIPLICATION",
+        "left" : {
+          "opType" : "INCREMENT",
+          "expression" : {
+            "name" : "f",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTUnaryExpression"
+        },
+        "right" : {
+          "opType" : "INCREMENT",
+          "expression" : {
+            "name" : "d",
+            "type" : "ASTIdentifier"
+          },
+          "type" : "ASTPostfixExpression"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

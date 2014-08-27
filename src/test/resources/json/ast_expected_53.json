@@ -1,0 +1,61 @@
+{
+  "nodes" : [ {
+    "identifier" : {
+      "name" : "label1",
+      "type" : "ASTIdentifier"
+    },
+    "statement" : {
+      "condition" : {
+        "operation" : "LESS",
+        "left" : {
+          "name" : "i",
+          "type" : "ASTIdentifier"
+        },
+        "right" : {
+          "value" : "10",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "body" : {
+        "statements" : [ {
+          "condition" : {
+            "operation" : "GREATER",
+            "left" : {
+              "operation" : "MULTIPLICATION",
+              "left" : {
+                "name" : "i",
+                "type" : "ASTIdentifier"
+              },
+              "right" : {
+                "name" : "i",
+                "type" : "ASTIdentifier"
+              },
+              "type" : "ASTTwoOperandExpression"
+            },
+            "right" : {
+              "value" : "50",
+              "constType" : "NUMBER_CONSTANT",
+              "type" : "ASTConstant"
+            },
+            "type" : "ASTTwoOperandExpression"
+          },
+          "ifBody" : {
+            "label" : {
+              "name" : "label1",
+              "type" : "ASTIdentifier"
+            },
+            "type" : "ASTBreak"
+          },
+          "elseBody" : null,
+          "type" : "ASTIfStatement"
+        } ],
+        "type" : "ASTBlockStatement"
+      },
+      "type" : "ASTWhile"
+    },
+    "type" : "ASTLabel"
+  } ],
+  "type" : "ASTRoot"
+}

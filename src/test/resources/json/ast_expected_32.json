@@ -1,0 +1,30 @@
+{
+  "nodes" : [ {
+    "name" : {
+      "name" : "filip",
+      "type" : "ASTIdentifier"
+    },
+    "arguments" : [ {
+      "name" : "a",
+      "type" : "ASTIdentifier"
+    } ],
+    "bodyStatements" : [ {
+      "expression" : {
+        "operation" : "PLUS",
+        "left" : {
+          "name" : "a",
+          "type" : "ASTIdentifier"
+        },
+        "right" : {
+          "value" : "1",
+          "constType" : "NUMBER_CONSTANT",
+          "type" : "ASTConstant"
+        },
+        "type" : "ASTTwoOperandExpression"
+      },
+      "type" : "ASTReturn"
+    } ],
+    "type" : "ASTFunctionDeclaration"
+  } ],
+  "type" : "ASTRoot"
+}

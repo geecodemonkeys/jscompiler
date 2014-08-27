@@ -1,0 +1,60 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "propertyIdentifier" : {
+        "name" : "prop",
+        "type" : "ASTIdentifier"
+      },
+      "memberExpression" : {
+        "memberExpression" : {
+          "memberExpression" : {
+            "memberExpression" : {
+              "expression" : {
+                "memberExpression" : {
+                  "memberExpression" : {
+                    "memberExpression" : {
+                      "memberExpression" : {
+                        "name" : "Object",
+                        "type" : "ASTIdentifier"
+                      },
+                      "arguments" : [ {
+                        "name" : "a",
+                        "type" : "ASTIdentifier"
+                      } ],
+                      "type" : "ASTNewExpression"
+                    },
+                    "arguments" : null,
+                    "type" : "ASTNewExpression"
+                  },
+                  "arguments" : null,
+                  "type" : "ASTNewExpression"
+                },
+                "arguments" : null,
+                "type" : "ASTNewExpression"
+              },
+              "type" : "ASTParenExpression"
+            },
+            "arguments" : [ ],
+            "type" : "ASTFunctionCall"
+          },
+          "indexExpression" : {
+            "value" : "1",
+            "constType" : "NUMBER_CONSTANT",
+            "type" : "ASTConstant"
+          },
+          "type" : "ASTIndexExpression"
+        },
+        "arguments" : [ ],
+        "type" : "ASTFunctionCall"
+      },
+      "type" : "ASTPropertyAccess"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

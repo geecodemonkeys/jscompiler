@@ -1,0 +1,19 @@
+{
+  "nodes" : [ {
+    "statement" : {
+      "statements" : [ ],
+      "type" : "ASTBlockStatement"
+    },
+    "initializer" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "increment" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "condition" : {
+      "type" : "ASTEmthyExpression"
+    },
+    "type" : "ASTFor"
+  } ],
+  "type" : "ASTRoot"
+}

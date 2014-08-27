@@ -1,0 +1,28 @@
+{
+  "nodes" : [ {
+    "assignmentType" : "EQUALS",
+    "leftHandSide" : {
+      "name" : "var1",
+      "type" : "ASTIdentifier"
+    },
+    "rightHandSide" : {
+      "operation" : "EQUALS_COMPARISON",
+      "left" : {
+        "opType" : "TYPEOF",
+        "expression" : {
+          "name" : "x",
+          "type" : "ASTIdentifier"
+        },
+        "type" : "ASTUnaryExpression"
+      },
+      "right" : {
+        "value" : "undefined",
+        "constType" : "STRING_CONSTANT",
+        "type" : "ASTConstant"
+      },
+      "type" : "ASTTwoOperandExpression"
+    },
+    "type" : "ASTAssignmentExpression"
+  } ],
+  "type" : "ASTRoot"
+}

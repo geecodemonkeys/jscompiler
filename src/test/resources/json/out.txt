@@ -1,0 +1,130 @@
+@Test
+public void test_1() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip(a,b,c,d) {if (a == 5 / c * 54 && a/4==f*3 || ff!=5) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_1.json"), actual, false);
+}
+@Test
+public void test_2() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if (document.someFunct() / 10 == this.prop * 5) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_2.json"), actual, false);
+}
+@Test
+public void test_3() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if (document.someFunct() / 10 == this.prop * 5 && !true != (c | f)) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_3.json"), actual, false);
+}
+@Test
+public void test_4() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if ((new Object()).prop1 == null  ^ (true && flag)) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_4.json"), actual, false);
+}
+@Test
+public void test_5() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if (((new Object()).prop1 + 5 - 4 / (i++)) > this.number) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_5.json"), actual, false);
+}
+@Test
+public void test_6() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if ((5 + 6 % 3) >= b) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_6.json"), actual, false);
+}
+@Test
+public void test_7() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if ((((5))) >= (((b)))) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_7.json"), actual, false);
+}
+@Test
+public void test_8() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if (!b && !c || d) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_8.json"), actual, false);
+}
+@Test
+public void test_9() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "function filip() {if (a<<2>5) {}}";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_9.json"), actual, false);
+}
+@Test
+public void test_10() 
+		throws JsonGenerationException, 
+		JsonMappingException, IOException, JSONException {
+	String js = "";
+	Parser parser = new Parser(js);
+	ASTRoot root = parser.parse();
+	
+	ObjectMapper objMapper = new ObjectMapper();
+	ObjectWriter writer = objMapper.defaultPrettyPrintingWriter();
+	String actual = writer.writeValueAsString(root);
+	JSONAssert.assertEquals(getJson("ast_expected_10.json"), actual, false);
+}
